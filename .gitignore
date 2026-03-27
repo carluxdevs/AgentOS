@@ -41,3 +41,5 @@ dist/
 dist-ssr/
 *.local
 .eslintcache
+.vercel
+.env*.local
