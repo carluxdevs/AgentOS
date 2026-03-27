@@ -1,7 +1,7 @@
 # 🚀 AgentOS: The Autonomous Product Operating Model (Skills Library)
 AgentOS is an open-source framework that maps the topology of a modern tech company into an executable Multi-Agent System. This repository contains the **Intelligence Layer** (33 specialized AI roles and workflows) designed to be imported into any Agentic IDE or Framework.
 ---
-### 🌐 [Interactive Visual Explorer (Web Demo)](https://agentos-wheat.vercel.app)
+### 🌐 [Interactive Visual Explorer (Web Demo)](https://agent-operative-system.vercel.app)
 ---
 Visualize the POM topology, agent dependencies, and decision loops in real-time.
 
