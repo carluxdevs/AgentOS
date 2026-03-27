@@ -31,7 +31,7 @@ const POM_DATA = {
 Bienvenido al ecosistema del **Product Operating Model** automatizado. Este proyecto define la topología organizacional, los flujos de trabajo (Workflows) y las herramientas (Skills) para una empresa tecnológica operada por **33 agentes de IA especializados**.
 
 ## 🎯 ¿Qué es este proyecto?
-Hemos mapeado todas las disciplinas necesarias para escalar un producto digital. Cada agente está diseñado bajo el **Pattern 1 de Anthropic (Claude)**: 
+Hemos mapeado todas las disciplinas necesarias para escalar un producto digital:
 * **Esquemas Planos (Flat Schemas)** para evitar alucinaciones en llamadas a herramientas.
 * **Guardrails** estrictos para evitar el solapamiento de responsabilidades entre agentes.
 * **Chain of Thought** obligatorio (vía etiqueta \`<thinking>\`) antes de tomar decisiones estratégicas o de capital.
@@ -53,19 +53,19 @@ El modelo está dividido en 7 verticales operativas principales. Haz clic en el 
 ---
 
 ## 📂 Repositorio Oficial
-[CARD|GitHub Repository|https://github.com/tu-usuario/pom-multi-agent|Almacenamiento oficial del código fuente, los esquemas XML y la arquitectura de este proyecto. Clona este repo para iniciar tu propia compañía autónoma.]
+[CARD|GitHub Repository|https://github.com/carluxdevs/AgentOS|Almacenamiento oficial del código fuente, los esquemas XML y la arquitectura de este proyecto. Clona este repo para iniciar tu propia compañía autónoma.]
 
-## 🤖 Automatización Multi-Agente (Next Steps)
-Tener los prompts es solo el primer paso. El objetivo final es conectar estos "cerebros" en un bucle de ejecución autónoma, permitiéndoles debatir, escribir código, testear y desplegar sin intervención humana constante.
+## 🤖 Automatización Multi-Agente (Arquitectura Actual)
+Conectar estos "cerebros" en un bucle de ejecución autónoma es el corazón del proyecto, permitiéndoles debatir, escribir código, testear y desplegar minimizando la intervención humana.
 
-[CARD|Autoresearch by Karpathy|https://github.com/karpathy/autoresearch|Framework de Andrej Karpathy para automatizar agentes de investigación y ejecución. Úsalo como referencia arquitectónica para orquestar los bucles de este POM.]
+[CARD|Autoresearch by Karpathy|https://github.com/karpathy/autoresearch|Framework de Andrej Karpathy que sirvió de inspiración para orquestar los bucles de ejecución de este POM.]
 
-### ¿Cómo poner esto en funcionamiento?
-Para evolucionar esta base de conocimiento abstracta a una **empresa ejecutable**, debes implementar un orquestador basado en grafos (como *LangGraph* o *CrewAI*):
+### ⚙️ Motor de Ejecución (En Funcionamiento)
+Esta base de conocimiento interactiva ya es una **empresa ejecutable** operada por un backend orquestador desarrollado en **LangGraph**:
 
-1. **Estado Global (La Memoria):** Crea un objeto que almacene el *Decision Log*, los *OKRs* vigentes y el *Presupuesto*. Todos los agentes leen y escriben en este estado central para mantener el contexto de la empresa.
-2. **Conexión de Tools (Ejecución Real):** Las etiquetas XML \`<tool_description>\` deben conectarse a funciones Python/Node reales. Por ejemplo, cuando el *Tech Lead* invoca \`calculate_basal_cost\`, un script debe analizar los commits reales del repositorio de GitHub de la empresa.
-3. **Bucles de Autocorrección:** Siguiendo el modelo de Karpathy, si el *Software Engineer Agent* falla un test al escribir código, su output vuelve automáticamente a su prompt de entrada junto con el mensaje de error del *QA Agent* para que itere y lo corrija de forma autónoma.
+1. **Estado Global (La Memoria):** Un objeto de estado almacena dinámicamente el *Decision Log*, los *OKRs* vigentes y el *Presupuesto*. Los agentes actúan con contexto real a lo largo de ciclos de trabajo.
+2. **Conexión de Tools (Ejecución Real):** Las utilidades definidas bajo \`<tool_description>\` están integradas de forma nativa a funciones Python del backend, transformando decisiones en tareas ejecutadas.
+3. **Bucles Cíclicos y Autocorrección:** Si un agente comete un error, el sistema desvía el control regresando el flujo al nodo de origen para que se "autocorrija" en base a la retroalimentación sin detener el proceso general.
 
 ---
 👉 *Navega por el menú lateral o usa la **Vista de Grafo** (arriba a la derecha) para visualizar cómo interactúan y se comunican las dependencias inter-departamentales de este sistema.*
@@ -2770,7 +2770,7 @@ function MarkdownRenderer({ content, onNavigate }) {
 // --- VISTA DE GRAFO ---
 function GraphView({ activeNode, onNodeSelect, onNodeDoubleClick }) {
   const svgRef = React.useRef(null);
-  const [viewBox, setViewBox] = useState({ x: 0, y: 0, w: 100, h: 100 });
+  const [viewBox, setViewBox] = useState({ x: -15, y: -15, w: 130, h: 130 });
   const [isDragging, setIsDragging] = useState(false);
   const [lastPos, setLastPos] = useState({ x: 0, y: 0 });
   const [dragDistance, setDragDistance] = useState(0);
@@ -2874,7 +2874,7 @@ function GraphView({ activeNode, onNodeSelect, onNodeDoubleClick }) {
   // Controles Flotantes
   const zoomIn = () => setViewBox(p => ({...p, x: p.x + p.w*0.05, y: p.y + p.h*0.05, w: p.w*0.9, h: p.h*0.9}));
   const zoomOut = () => setViewBox(p => ({...p, x: p.x - p.w*0.05, y: p.y - p.h*0.05, w: p.w*1.1, h: p.h*1.1}));
-  const resetView = () => setViewBox({ x: 0, y: 0, w: 100, h: 100 });
+  const resetView = () => setViewBox({ x: -15, y: -15, w: 130, h: 130 });
   const focusActive = () => {
      if(!activeNode) return resetView();
      const node = GRAPH_NODES.find(n => n.id === activeNode);
