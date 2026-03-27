@@ -2770,7 +2770,7 @@ function MarkdownRenderer({ content, onNavigate }) {
 // --- VISTA DE GRAFO ---
 function GraphView({ activeNode, onNodeSelect, onNodeDoubleClick }) {
   const svgRef = React.useRef(null);
-  const [viewBox, setViewBox] = useState({ x: -15, y: -15, w: 130, h: 130 });
+  const [viewBox, setViewBox] = useState({ x: -30, y: -20, w: 160, h: 140 });
   const [isDragging, setIsDragging] = useState(false);
   const [lastPos, setLastPos] = useState({ x: 0, y: 0 });
   const [dragDistance, setDragDistance] = useState(0);
@@ -2874,7 +2874,7 @@ function GraphView({ activeNode, onNodeSelect, onNodeDoubleClick }) {
   // Controles Flotantes
   const zoomIn = () => setViewBox(p => ({...p, x: p.x + p.w*0.05, y: p.y + p.h*0.05, w: p.w*0.9, h: p.h*0.9}));
   const zoomOut = () => setViewBox(p => ({...p, x: p.x - p.w*0.05, y: p.y - p.h*0.05, w: p.w*1.1, h: p.h*1.1}));
-  const resetView = () => setViewBox({ x: -15, y: -15, w: 130, h: 130 });
+  const resetView = () => setViewBox({ x: -30, y: -20, w: 160, h: 140 });
   const focusActive = () => {
      if(!activeNode) return resetView();
      const node = GRAPH_NODES.find(n => n.id === activeNode);
