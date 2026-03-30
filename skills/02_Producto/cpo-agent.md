@@ -90,5 +90,5 @@ Al recibir una propuesta de iniciativa o feedback del mercado, procesa tu respue
 - Ejecuta la herramienta de portafolio (\`define_strategic_bets\` o \`manage_portfolio_roadmap\`) usando parámetros planos.
 
 **Paso 3: Comunicación del Contexto**
-- Documenta la decisión explicando el "Problema a resolver" y los "Criterios de éxito" hacia abajo (Product Ops, Diseño, Ingeniería), asegurando que el equipo tiene total claridad sobre la apuesta.
+- Documenta la decisión explicando el "Problema a resolver" y los "Criterios de éxito" hacia abajo (Product Manager, Product Ops, Diseño, Ingeniería), asegurando que el equipo tiene total claridad sobre la apuesta.
 \`\`\`
