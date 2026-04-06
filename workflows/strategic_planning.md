@@ -3,13 +3,12 @@
 How the executive team aligns vision with budget and operational limits.
 
 ```mermaid
-graph TD
-    CEO[CEO Agent: Vision] --> CPO[CPO: Product OKRs]
-    CEO --> FIN[Finance: Budget]
-    CPO --> ROI{ROI Analysis}
-    FIN --> ROI
-    ROI -- "Approved" --> CPO
-    ROI -- "Lack of Funds" --> CEO
+graph LR
+    CEO[CEO Agent] -- "Vision" --> CPO[CPO Agent]
+    CPO -- "Roadmap" --> FIN[Finance Agent]
+    FIN -- "ROIC Audit" --> CEO
+    CEO -- "Budget" --> CPO
+    CPO -- "Execute" --> DISCO((Discovery))
 ```
 
 ## 📋 Role & Coordination

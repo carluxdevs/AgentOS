@@ -3,10 +3,11 @@
 Workflow to manage infrastructure expansion while maintaining financial and technical efficiency.
 
 ```mermaid
-graph TD
-    TL[Tech Lead: New Tech] --> SRE[DevOps/SRE: Deployment]
-    SRE -- "Cost Alert" --> FIN[Finance: Review]
-    FIN -- "Optimized" --> SRE
+graph LR
+    TL[Tech Lead] -- "Spec" --> DEVOPS[DevOps Agent]
+    DEVOPS -- "Cost Alert" --> FIN[Finance Agent]
+    FIN -- "ROIC Audit" --> DEVOPS
+    DEVOPS -- "Apply" --> INFRA((Infra))
 ```
 
 ## 📋 Role & Coordination

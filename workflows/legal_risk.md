@@ -3,11 +3,11 @@
 Workflow to vet new business partnerships, contracts, and regulatory exposure.
 
 ```mermaid
-graph TD
-    BD[BizDev: Partnership] --> L[Legal: Contract Review]
-    L -- "Risks?" --> L
-    L --> FIN[Finance: Risk Score]
-    FIN -- "Clear" --> BD
+graph LR
+    BD[BizDev Agent] -- "Draft" --> LEGAL[Legal Agent]
+    LEGAL -- "Audit" --> FIN[Finance Agent]
+    FIN -- "Risk Score" --> BD
+    BD -- "Sign" --> EXEC((Closure))
 ```
 
 ## 📋 Role & Coordination
