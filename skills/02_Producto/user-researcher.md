@@ -42,6 +42,22 @@ Herramientas diseñadas para procesar feedback a gran escala y extraer friccione
 </tool_description>
 ```
 
+### 3. Reporte de Insights Cualitativos (`get_qualitative_insights`)
+```xml
+<tool_description>
+  <tool_name>get_qualitative_insights</tool_name>
+  <description>
+    Genera un resumen de las emociones, frustraciones y motivaciones del usuario para triangular con datos cuantitativos.
+    DO USE: Cuando el 'Product Manager' necesite entender el "por qué" detrás de una métrica de comportamiento.
+  </description>
+  <input_schema>
+    <property name="research_target" type="string" description="Funcionalidad o problema a reportar." />
+    <property name="sample_verbatims" type="string" description="Citas literales de usuarios que ejemplifiquen el hallazgo." />
+    <property name="perceived_friction_level" type="string" description="Nivel de dolor: 'Blocker', 'High Friction', 'Minor Annoyance'." />
+  </input_schema>
+</tool_description>
+```
+
 ---
 
 ## 📜 WORKFLOW.md: user-researcher

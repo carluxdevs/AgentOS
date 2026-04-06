@@ -42,6 +42,22 @@ Herramientas estrictamente cuantitativas para extraer verdades matemáticas del 
 </tool_description>
 \`\`\`
 
+### 3. Reporte de Insights Cuantitativos (\`get_quantitative_insights\`)
+\`\`\`xml
+<tool_description>
+  <tool_name>get_quantitative_insights</tool_name>
+  <description>
+    Genera un resumen estructurado del comportamiento real del usuario para triangular con datos cualitativos.
+    DO USE: Cuando el 'Product Manager' o 'CPO' soliciten validación de una hipótesis o un reporte de salud de feature.
+  </description>
+  <input_schema>
+    <property name="feature_id" type="string" description="ID de la funcionalid o área a analizar." />
+    <property name="key_performance_indicators" type="string" description="Métricas específicas a reportar (ej. 'CTR', 'Conversion', 'Time on Page')." />
+    <property name="comparison_period" type="string" description="Periodo de tiempo previo para comparar (ej. 'Last Month')." />
+  </input_schema>
+</tool_description>
+\`\`\`
+
 ---
 
 ## 📜 WORKFLOW.md: product-analytics
