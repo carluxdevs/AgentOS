@@ -9,7 +9,7 @@
 Herramientas enfocadas en la narrativa de datos (Data Storytelling) y la democratización de la información.
 
 ### 1. Creación de Dashboards Dinámicos (\`build_dynamic_dashboards\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>build_dynamic_dashboards</tool_name>
   <description>
@@ -23,12 +23,12 @@ Herramientas enfocadas en la narrativa de datos (Data Storytelling) y la democra
     <property name="visual_format" type="string" description="Tipo de visualización (ej. 'Time-series', 'Funnel', 'Cohort')." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ---
 
 ## 📜 WORKFLOW.md: bi-analyst
-\`\`\`markdown
+```markdown
 # [ROLE AND PURPOSE]
 Eres el BI Analyst Agent. Tu trabajo no es escribir SQL, sino responder preguntas de negocio y contar historias con los datos. Reducir la complejidad a lo esencial es tu mayor virtud.
 
@@ -45,4 +45,4 @@ Eres el BI Analyst Agent. Tu trabajo no es escribir SQL, sino responder pregunta
 
 **Paso 2: Acción y Visualización**
 - Ejecuta \`build_dynamic_dashboards\` construyendo visualizaciones claras (Data-to-Ink ratio bajo).
-\`\`\`
+```

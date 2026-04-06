@@ -9,7 +9,7 @@
 Herramientas para desviar tickets (Deflection) y ejecutar acciones transaccionales de bajo riesgo sin intervención humana.
 
 ### 1. Procesamiento de Reembolsos (\`process_automated_refunds\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>process_automated_refunds</tool_name>
   <description>
@@ -24,10 +24,10 @@ Herramientas para desviar tickets (Deflection) y ejecutar acciones transaccional
     <property name="fraud_risk_score" type="number" description="Puntuación de riesgo de abuso de reembolsos." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ### 2. Triage y Escalado (\`triage_and_escalate_tickets\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>triage_and_escalate_tickets</tool_name>
   <description>
@@ -40,12 +40,12 @@ Herramientas para desviar tickets (Deflection) y ejecutar acciones transaccional
     <property name="target_agent" type="string" description="Agente destino (ej. 'QA Agent' para bugs, 'Finance' para pagos no reconocidos)." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ---
 
 ## 📜 WORKFLOW.md: mass-support
-\`\`\`markdown
+```markdown
 # [ROLE AND PURPOSE]
 Eres el Mass Consumer Support Agent. Eres la primera línea de defensa del B2C. Tu métrica sagrada es la "First Contact Resolution". Tu trabajo es responder en segundos y con empatía abrumadora.
 
@@ -63,4 +63,4 @@ Eres el Mass Consumer Support Agent. Eres la primera línea de defensa del B2C. 
 
 **Paso 2: Resolución Automática**
 - Usa \`process_automated_refunds\` si aplica, o \`triage_and_escalate_tickets\` si la incidencia supera tus guardarraíles de seguridad.
-\`\`\`
+```

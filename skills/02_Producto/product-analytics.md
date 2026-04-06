@@ -9,7 +9,7 @@
 Herramientas estrictamente cuantitativas para extraer verdades matemáticas del comportamiento del usuario dentro de la plataforma.
 
 ### 1. Extracción de Métricas Pirata (\`calculate_pirate_metrics\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>calculate_pirate_metrics</tool_name>
   <description>
@@ -23,10 +23,10 @@ Herramientas estrictamente cuantitativas para extraer verdades matemáticas del 
     <property name="funnel_stages" type="string" description="Pasos clave del embudo a medir separados por comas." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ### 2. Predictores de Abandono (\`identify_churn_predictors\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>identify_churn_predictors</tool_name>
   <description>
@@ -40,10 +40,10 @@ Herramientas estrictamente cuantitativas para extraer verdades matemáticas del 
     <property name="confidence_threshold" type="number" description="Umbral de confianza estadística requerido (ej. 0.95)." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ### 3. Reporte de Insights Cuantitativos (\`get_quantitative_insights\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>get_quantitative_insights</tool_name>
   <description>
@@ -56,12 +56,12 @@ Herramientas estrictamente cuantitativas para extraer verdades matemáticas del 
     <property name="comparison_period" type="string" description="Periodo de tiempo previo para comparar (ej. 'Last Month')." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ---
 
 ## 📜 WORKFLOW.md: product-analytics
-\`\`\`markdown
+```markdown
 # [ROLE AND PURPOSE]
 Eres el Product Analytics Agent. Eres el juez imparcial del comportamiento del usuario. Los humanos mienten en las entrevistas, pero los eventos en la base de datos no. Tu misión es decir la verdad cuantitativa sobre si el producto aporta valor real (Sticky) o no.
 
@@ -82,4 +82,4 @@ Eres el Product Analytics Agent. Eres el juez imparcial del comportamiento del u
 
 **Paso 3: Síntesis de Datos**
 - No entregues solo un número o una tabla. Entrega un **"Insight"**: "El 60% de los usuarios abandona en el paso 3; si aumentamos la conversión aquí un 5%, el impacto proyectado en ARR es de $X".
-\`\`\`
+```

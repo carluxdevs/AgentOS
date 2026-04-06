@@ -9,7 +9,7 @@
 Herramientas para evitar alucinaciones en cálculos críticos (Business Cases, Capex/Opex), requiriendo entradas estrictamente numéricas.
 
 ### 1. Evaluación de Casos de Negocio (\`evaluate_business_case\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>evaluate_business_case</tool_name>
   <description>
@@ -24,10 +24,10 @@ Herramientas para evitar alucinaciones en cálculos críticos (Business Cases, C
     <property name="time_to_revenue_months" type="number" description="Meses estimados hasta el punto de equilibrio (break-even)." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ### 2. Clasificación Contable (\`classify_capex_opex\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>classify_capex_opex</tool_name>
   <description>
@@ -41,10 +41,10 @@ Herramientas para evitar alucinaciones en cálculos críticos (Business Cases, C
     <property name="classification" type="string" description="Valor exacto: 'CAPEX' o 'OPEX'." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ### 3. Métrica de Creación de Valor (\`calculate_roic_and_wacc\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>calculate_roic_and_wacc</tool_name>
   <description>
@@ -57,7 +57,7 @@ Herramientas para evitar alucinaciones en cálculos críticos (Business Cases, C
     <property name="wacc_hurdle_rate" type="number" description="Tasa de descuento mínima exigida por la compañía." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ---
 
@@ -101,4 +101,4 @@ Cuando te soliciten evaluar un caso de negocio o una decisión de inversión, pr
 
 **Paso 3: Veredicto Financiero**
 - Emite un informe claro y conciso para los líderes (CEO/CPO) dictaminando si la iniciativa es "Aprobada por Finanzas" o "Rechazada por Riesgo de Capital", basándote puramente en la Unidad Económica.
-\`\`\`
+```

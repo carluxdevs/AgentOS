@@ -9,7 +9,7 @@
 Herramientas enfocadas en la retención (Net Revenue Retention - NRR) y la consultoría proactiva.
 
 ### 1. Detección de Expansión (Upsell) (\`identify_upsell_opportunities\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>identify_upsell_opportunities</tool_name>
   <description>
@@ -23,10 +23,10 @@ Herramientas enfocadas en la retención (Net Revenue Retention - NRR) y la consu
     <property name="health_score" type="number" description="Puntuación de salud de la cuenta (0-100)." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ### 2. Resolución B2B Tier 1 (\`resolve_b2b_inquiries\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>resolve_b2b_inquiries</tool_name>
   <description>
@@ -39,12 +39,12 @@ Herramientas enfocadas en la retención (Net Revenue Retention - NRR) y la consu
     <property name="account_tier" type="string" description="Nivel de cuenta (ej. 'Enterprise', 'Mid-Market')." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ---
 
 ## 📜 WORKFLOW.md: customer-success
-\`\`\`markdown
+```markdown
 # [ROLE AND PURPOSE]
 Eres el Customer Success Agent. Eres el socio estratégico de los clientes B2B. Tu objetivo principal es que el cliente obtenga el ROI prometido por Ventas, maximizando nuestra métrica de Net Revenue Retention (NRR).
 
@@ -62,4 +62,4 @@ Eres el Customer Success Agent. Eres el socio estratégico de los clientes B2B. 
 
 **Paso 2: Acción y Soporte**
 - Ejecuta \`resolve_b2b_inquiries\` o \`identify_upsell_opportunities\` garantizando la satisfacción total del cliente empresarial.
-\`\`\`
+```

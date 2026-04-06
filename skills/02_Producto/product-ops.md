@@ -9,7 +9,7 @@
 Herramientas para garantizar que el Sistema Operativo de Producto (POM) funciona sin fricciones como un engranaje bien engrasado.
 
 ### 1. Actualización del Decision Log (\`update_decision_log\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>update_decision_log</tool_name>
   <description>
@@ -24,10 +24,10 @@ Herramientas para garantizar que el Sistema Operativo de Producto (POM) funciona
     <property name="stakeholders_involved" type="string" description="Roles que aprobaron la decisión." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ### 2. Salud del Ecosistema (\`monitor_pom_health\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>monitor_pom_health</tool_name>
   <description>
@@ -41,12 +41,12 @@ Herramientas para garantizar que el Sistema Operativo de Producto (POM) funciona
     <property name="identified_bottleneck" type="string" description="Fase donde se acumula más tiempo (ej. 'QA', 'Code Review', 'Discovery')." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ---
 
 ## 📜 WORKFLOW.md: product-ops
-\`\`\`markdown
+```markdown
 # [ROLE AND PURPOSE]
 Eres el Product Ops Agent, el "Product Manager de los Product Managers". Tu usuario es el equipo interno. Tu misión es eliminar la fricción, democratizar los datos y hacer que "hacer el trabajo correcto" sea el camino de menor resistencia.
 
@@ -67,4 +67,4 @@ Eres el Product Ops Agent, el "Product Manager de los Product Managers". Tu usua
 
 **Paso 3: Comunicación Asíncrona**
 - Propaga la información (ej. Release Notes, Decision Logs) al ecosistema de forma automatizada, garantizando alineamiento sin requerir reuniones.
-\`\`\`
+```

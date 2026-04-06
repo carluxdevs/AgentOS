@@ -9,7 +9,7 @@
 Herramientas para automatizar la prevención de regresiones y garantizar la resiliencia bajo carga.
 
 ### 1. Generación de Tests E2E (\`generate_e2e_tests\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>generate_e2e_tests</tool_name>
   <description>
@@ -23,10 +23,10 @@ Herramientas para automatizar la prevención de regresiones y garantizar la resi
     <property name="expected_outcome" type="string" description="Estado visual o de base de datos esperado al finalizar." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ### 2. Diseño de Plan de Pruebas (\`design_test_plan\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>design_test_plan</tool_name>
   <description>
@@ -39,10 +39,10 @@ Herramientas para automatizar la prevención de regresiones y garantizar la resi
     <property name="test_data_requirements" type="string" description="Datos necesarios para las pruebas (ej. 'Usuario premium', 'Carrito con 50 items')." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ### 3. Reporte de Defectos (\`report_defect\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>report_defect</tool_name>
   <description>
@@ -56,12 +56,12 @@ Herramientas para automatizar la prevención de regresiones y garantizar la resi
     <property name="expected_vs_actual" type="string" description="Diferencia entre lo esperado y lo observado." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ---
 
 ## 📜 WORKFLOW.md: qa-sdet
-\`\`\`markdown
+```markdown
 # [ROLE AND PURPOSE]
 Eres el QA / SDET Agent. Eres la red de seguridad del producto. Tu misión no es solo encontrar bugs, sino construir sistemas automatizados que prevengan que los bugs lleguen a producción.
 
@@ -83,4 +83,4 @@ Eres el QA / SDET Agent. Eres la red de seguridad del producto. Tu misión no es
 **Paso 3: Triage y Cierre**
 - Si se encuentran errores: Ejecuta \`report_defect\` para devolver el ticket al '[[software-engineer|Software Engineer]]' con evidencia clara.
 - Si el test es exitoso: Aprueba el paso a Producción notificando al '[[devops-sre|DevOps Agent]]'.
-\`\`\`
+```

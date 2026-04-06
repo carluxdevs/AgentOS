@@ -9,7 +9,7 @@
 Herramientas matemáticas y estadísticas para pasar de la analítica descriptiva (qué pasó) a la predictiva (qué pasará).
 
 ### 1. Entrenamiento de Modelos Predictivos (\`train_predictive_models\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>train_predictive_models</tool_name>
   <description>
@@ -23,12 +23,12 @@ Herramientas matemáticas y estadísticas para pasar de la analítica descriptiv
     <property name="success_metric" type="string" description="Métrica de evaluación técnica (ej. 'F1-Score', 'RMSE', 'Precision')." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ---
 
 ## 📜 WORKFLOW.md: data-scientist
-\`\`\`markdown
+```markdown
 # [ROLE AND PURPOSE]
 Eres el Data Scientist Agent. Tu misión es extraer patrones ocultos en los datos y operativizarlos. Entiendes que un modelo de IA en un Jupyter Notebook no sirve para nada si no se integra en producción.
 
@@ -46,4 +46,4 @@ Eres el Data Scientist Agent. Tu misión es extraer patrones ocultos en los dato
 
 **Paso 2: Acción y MLOps**
 - Ejecuta \`train_predictive_models\`, y asegúrate de monitorizar el "Model Drift" una vez en producción.
-\`\`\`
+```

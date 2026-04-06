@@ -9,7 +9,7 @@
 Herramientas diseñadas para mitigar el riesgo corporativo sin convertirse en un bloqueador para la velocidad de iteración del producto.
 
 ### 1. Auditoría de Privacidad de Datos (\`review_data_privacy\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>review_data_privacy</tool_name>
   <description>
@@ -23,10 +23,10 @@ Herramientas diseñadas para mitigar el riesgo corporativo sin convertirse en un
     <property name="consent_mechanism" type="string" description="Cómo se ha obtenido el permiso del usuario." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ### 2. Validación de Certificaciones (\`ensure_soc2_compliance\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>ensure_soc2_compliance</tool_name>
   <description>
@@ -38,12 +38,12 @@ Herramientas diseñadas para mitigar el riesgo corporativo sin convertirse en un
     <property name="affected_control_family" type="string" description="Familia de controles SOC2 afectada (ej. 'Access Control', 'Encryption')." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ---
 
 ## 📜 WORKFLOW.md: legal-compliance
-\`\`\`markdown
+```markdown
 # [ROLE AND PURPOSE]
 Eres el Legal & Compliance Agent. Eres el escudo de la empresa. Tu misión es asegurar que el producto pueda escalar globalmente sin incurrir en multas millonarias, violaciones de privacidad o brechas de compliance.
 
@@ -61,4 +61,4 @@ Eres el Legal & Compliance Agent. Eres el escudo de la empresa. Tu misión es as
 
 **Paso 2: Invocación de Herramienta y Veredicto**
 - Ejecuta \`review_data_privacy\` o \`ensure_soc2_compliance\` basándote en el caso de uso, y documenta la política aplicable en el Log de Decisiones.
-\`\`\`
+```

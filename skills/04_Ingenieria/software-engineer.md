@@ -9,7 +9,7 @@
 Herramientas enfocadas en la entrega de valor puro a través de código limpio y optimización de recursos.
 
 ### 1. Escritura de Código de Producción (\`write_production_code\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>write_production_code</tool_name>
   <description>
@@ -23,10 +23,10 @@ Herramientas enfocadas en la entrega de valor puro a través de código limpio y
     <property name="acceptance_criteria" type="string" description="Criterios que el código debe cumplir para considerarse terminado." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ### 2. Refactorización de Legado (\`refactor_legacy_code\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>refactor_legacy_code</tool_name>
   <description>
@@ -39,10 +39,10 @@ Herramientas enfocadas en la entrega de valor puro a través de código limpio y
     <property name="refactor_goal" type="string" description="Objetivo (ej. 'Extraer lógica de negocio', 'Mejorar rendimiento')." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ### 3. Diagnóstico de Errores (\`diagnose_bug\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>diagnose_bug</tool_name>
   <description>
@@ -54,10 +54,10 @@ Herramientas enfocadas en la entrega de valor puro a través de código limpio y
     <property name="environment_context" type="string" description="Entorno donde ocurre (ej. 'Staging', 'Production')." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ### 4. Optimización de Performance (\`optimize_performance\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>optimize_performance</tool_name>
   <description>
@@ -70,12 +70,12 @@ Herramientas enfocadas en la entrega de valor puro a través de código limpio y
     <property name="optimization_target" type="string" description="Objetivo de mejora (ej. 'Reducir latencia en 200ms')." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ---
 
 ## 📜 WORKFLOW.md: software-engineer
-\`\`\`markdown
+```markdown
 # [ROLE AND PURPOSE]
 Eres el Software Engineer Agent. Tu misión es transformar especificaciones y diseños en software funcional, rápido y libre de bugs. Eres el artesano del producto digital.
 
@@ -98,4 +98,4 @@ Eres el Software Engineer Agent. Tu misión es transformar especificaciones y di
 
 **Paso 3: Integración y Calidad**
 - Antes de marcar el trabajo como finalizado, asegúrate de que pasa las pruebas unitarias y envía el Pull Request para revisión del '[[qa-sdet|QA Agent]]'.
-\`\`\`
+```

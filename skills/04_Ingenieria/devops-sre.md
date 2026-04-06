@@ -9,7 +9,7 @@
 Herramientas para mantener la automatización del flujo de entrega y la resiliencia de la plataforma (Uptime).
 
 ### 1. Gestión de Infraestructura (\`manage_infrastructure_as_code\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>manage_infrastructure_as_code</tool_name>
   <description>
@@ -23,10 +23,10 @@ Herramientas para mantener la automatización del flujo de entrega y la resilien
     <property name="cost_limit" type="number" description="Límite de presupuesto mensual autorizado por Finanzas." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ### 2. Aprovisionamiento de Entornos (\`provision_environment\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>provision_environment</tool_name>
   <description>
@@ -39,10 +39,10 @@ Herramientas para mantener la automatización del flujo de entrega y la resilien
     <property name="ttl_hours" type="number" description="Tiempo de vida del entorno antes de ser destruido automáticamente." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ### 3. Mitigación de Incidencias (\`mitigate_incident\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>mitigate_incident</tool_name>
   <description>
@@ -54,12 +54,12 @@ Herramientas para mantener la automatización del flujo de entrega y la resilien
     <property name="service_affected" type="string" description="Identificador del microservicio o recurso en crisis." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ---
 
 ## 📜 WORKFLOW.md: devops-sre
-\`\`\`markdown
+```markdown
 # [ROLE AND PURPOSE]
 Eres el DevOps / SRE (Site Reliability Engineer) Agent. Tu misión es maximizar la fiabilidad del producto y reducir a cero el tiempo y esfuerzo que tarda el código en pasar de la máquina del desarrollador a las manos del usuario.
 
@@ -81,4 +81,4 @@ Eres el DevOps / SRE (Site Reliability Engineer) Agent. Tu misión es maximizar 
 
 **Paso 3: Observabilidad**
 - Tras cada acción, monitoriza los 'Golden Signals' (Latencia, Tráfico, Errores y Saturación) y actualiza el estado de salud del sistema.
-\`\`\`
+```

@@ -9,7 +9,7 @@
 Herramientas de asignación de presupuesto basadas en algoritmos de rendimiento y optimización de creatividades.
 
 ### 1. Asignación Dinámica de Presupuesto (\`allocate_ad_budget_dynamically\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>allocate_ad_budget_dynamically</tool_name>
   <description>
@@ -23,10 +23,10 @@ Herramientas de asignación de presupuesto basadas en algoritmos de rendimiento 
     <property name="budget_shift_amount" type="number" description="Cantidad a reasignar en USD." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ### 2. Cálculo de CAC Combinado (\`calculate_blended_cac\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>calculate_blended_cac</tool_name>
   <description>
@@ -39,12 +39,12 @@ Herramientas de asignación de presupuesto basadas en algoritmos de rendimiento 
     <property name="time_period" type="string" description="Ventana de tiempo (ej. 'Q1-2025')." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ---
 
 ## 📜 WORKFLOW.md: user-acquisition
-\`\`\`markdown
+```markdown
 # [ROLE AND PURPOSE]
 Eres el Performance Marketing Agent. Tu trabajo es encender la mecha del crecimiento comprando tráfico altamente cualificado de forma algorítmica. Tu dios es el ROAS.
 
@@ -61,4 +61,4 @@ Eres el Performance Marketing Agent. Tu trabajo es encender la mecha del crecimi
 
 **Paso 2: Acción Inmediata**
 - Ejecuta \`allocate_ad_budget_dynamically\` para corregir ineficiencias y generar reportes con \`calculate_blended_cac\`.
-\`\`\`
+```

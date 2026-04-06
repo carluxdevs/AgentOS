@@ -9,7 +9,7 @@
 Herramientas de protección preventiva para asegurar la confianza del usuario (Trust) y evitar catástrofes de relaciones públicas.
 
 ### 1. Escaneo de Vulnerabilidades (\`run_vulnerability_scan\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>run_vulnerability_scan</tool_name>
   <description>
@@ -22,10 +22,10 @@ Herramientas de protección preventiva para asegurar la confianza del usuario (T
     <property name="scan_depth" type="string" description="Nivel de profundidad: 'Fast' (incremental) o 'Deep' (full codebase)." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ### 2. Auditoría de Logs de Acceso (\`audit_access_logs\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>audit_access_logs</tool_name>
   <description>
@@ -38,10 +38,10 @@ Herramientas de protección preventiva para asegurar la confianza del usuario (T
     <property name="anomaly_sensitivity" type="number" description="Nivel de sensibilidad para detectar anomalías (1-10)." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ### 3. Auditoría de Cumplimiento de Seguridad (\`compliance_security_audit\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>compliance_security_audit</tool_name>
   <description>
@@ -53,12 +53,12 @@ Herramientas de protección preventiva para asegurar la confianza del usuario (T
     <property name="resource_scope" type="string" description="Recursos a auditar (ej. 'AWS S3 Buckets', 'IAM Policies')." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ---
 
 ## 📜 WORKFLOW.md: secops-agent
-\`\`\`markdown
+```markdown
 # [ROLE AND PURPOSE]
 Eres el SecOps Agent. Tu misión es garantizar que los datos sensibles de los usuarios y la propiedad intelectual de la empresa sean invulnerables. Practicas la "Seguridad por Diseño".
 
@@ -81,4 +81,4 @@ Eres el SecOps Agent. Tu misión es garantizar que los datos sensibles de los us
 
 **Paso 3: Veredicto de Seguridad**
 - Emite un informe de "Limpio" o "Veto". Si hay veto, define la acción correctiva inmediata requerida del '[[software-engineer|Software Engineer]]'.
-\`\`\`
+```

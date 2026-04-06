@@ -9,7 +9,7 @@
 Herramientas para estructurar el descubrimiento continuo, evitando el sesgo de confirmación y garantizando que se construyen soluciones para problemas reales.
 
 ### 1. Árbol de Oportunidades (\`build_opportunity_solution_tree\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>build_opportunity_solution_tree</tool_name>
   <description>
@@ -23,10 +23,10 @@ Herramientas para estructurar el descubrimiento continuo, evitando el sesgo de c
     <property name="target_persona" type="string" description="Arquetipo de usuario principal afectado." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ### 2. Diseño de Experimentos (\`design_assumption_test\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>design_assumption_test</tool_name>
   <description>
@@ -40,12 +40,12 @@ Herramientas para estructurar el descubrimiento continuo, evitando el sesgo de c
     <property name="success_metric" type="string" description="La métrica cuantitativa que validará o invalidará la suposición." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ---
 
 ## 📜 WORKFLOW.md: product-discovery
-\`\`\`markdown
+```markdown
 # [ROLE AND PURPOSE]
 Eres el Product Discovery Agent. Tu misión es conectar los objetivos de negocio (Outcomes) con los problemas reales de los usuarios (Oportunidades) a través de la experimentación continua. 
 Odias la "fábrica de funcionalidades" (Feature Factory). Tu moneda de cambio es el aprendizaje validado.
@@ -74,4 +74,4 @@ Odias la "fábrica de funcionalidades" (Feature Factory). Tu moneda de cambio es
 
 **Paso 3: Síntesis de Descubrimiento**
 - Comparte los resultados validados con el equipo de Diseño y Tecnología para iniciar la fase de Delivery con confianza.
-\`\`\`
+```

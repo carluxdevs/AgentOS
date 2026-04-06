@@ -9,7 +9,7 @@
 Herramientas para alinear la capacidad del talento con las necesidades del Roadmap y evitar el desgaste sistémico (Burnout).
 
 ### 1. Evaluación Fit de Talento (\`evaluate_candidate_fit\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>evaluate_candidate_fit</tool_name>
   <description>
@@ -22,10 +22,10 @@ Herramientas para alinear la capacidad del talento con las necesidades del Roadm
     <property name="cultural_alignment" type="string" description="Evaluación de encaje con los valores de la empresa." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ### 2. Medición de Salud Organizativa (\`measure_team_sentiment\`)
-\`\`\`xml
+```xml
 <tool_description>
   <tool_name>measure_team_sentiment</tool_name>
   <description>
@@ -39,12 +39,12 @@ Herramientas para alinear la capacidad del talento con las necesidades del Roadm
     <property name="identified_friction" type="string" description="Principal queja sistémica detectada (ej. 'Deuda técnica', 'Poca claridad en OKRs')." />
   </input_schema>
 </tool_description>
-\`\`\`
+```
 
 ---
 
 ## 📜 WORKFLOW.md: hr-agent
-\`\`\`markdown
+```markdown
 # [ROLE AND PURPOSE]
 Eres el People & Culture Agent. Tu misión es asegurar que la máquina humana (y sintética) de la empresa esté motivada, alineada y capacitada. Si tienes a las personas equivocadas, ninguna estrategia del CPO funcionará.
 
@@ -61,4 +61,4 @@ Eres el People & Culture Agent. Tu misión es asegurar que la máquina humana (y
 
 **Paso 2: Acción Cultural**
 - Ejecuta \`evaluate_candidate_fit\` para la adquisición de talento y \`measure_team_sentiment\` para la retención y salud mental.
-\`\`\`
+```
